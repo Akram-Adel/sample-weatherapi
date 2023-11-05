@@ -15,7 +15,7 @@ export function App() {
     <ErrorBoundary>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name={'UserInfo'} component={Pages.UserInfo} />
+          <Stack.Screen name={'CityInfo'} component={Pages.CityInfo} />
         </Stack.Navigator>
       </NavigationContainer>
     </ErrorBoundary>

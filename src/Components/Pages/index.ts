@@ -1,1 +1,1 @@
-export { UserInfo } from './UserInfo/UserInfo';
+export { CityInfo } from './CityInfo/CityInfo';

@@ -1,4 +1,4 @@
-const { ESLintUtils } = require('@typescript-eslint/utils'); // eslint-disable-line import/no-unresolved
+const { ESLintUtils } = require('@typescript-eslint/utils');
 
 module.exports = ESLintUtils.RuleCreator.withoutDocs({
   defaultOptions: [],

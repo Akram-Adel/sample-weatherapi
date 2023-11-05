@@ -32,16 +32,16 @@ export function Text(props: TextProps) {
   // prettier-ignore
   const HeightStyle = props.H1 ? styles.H1
     : props.H2 ? styles.H2
-      : props.H3 ? styles.H3
-        : props.H4 ? styles.H4
-          : props.H5 ? styles.H5
-            : props.H7 ? styles.H7
-              : styles.H6;
+    : props.H3 ? styles.H3
+    : props.H4 ? styles.H4
+    : props.H5 ? styles.H5
+    : props.H7 ? styles.H7
+    : styles.H6;
 
   // prettier-ignore
   const ColorStyle = props.secondary ? Colors.secondary
     : props.light ? Colors.light
-      : Colors.primary;
+    : Colors.primary;
 
   return (
     <RNText

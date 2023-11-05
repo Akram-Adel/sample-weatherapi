@@ -18,6 +18,7 @@ module.exports = {
 
     'import/extensions': ['error', { tsx: 'never', json: 'always' }],
     'import/prefer-default-export': 'off',
+    indent: 'off',
     'max-len': 'off',
     'no-multiple-empty-lines': 'off',
     'no-nested-ternary': 'off',
@@ -26,6 +27,8 @@ module.exports = {
       { selector: 'ExportDefaultDeclaration', message: 'Prefer named exports' },
     ],
     'no-use-before-define': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'react/jsx-curly-brace-presence': ['error', { props: 'always' }],
     'react-native/no-unused-styles': 'error',
     'unused-imports/no-unused-imports': 'error',
     'object-curly-newline': 'off',
@@ -51,7 +54,7 @@ module.exports = {
         pathGroups: [
           { pattern: 'react*(-native)', group: 'builtin' },
           { pattern: '{@Navigation,@Theme}', group: 'index', position: 'before' },
-          { pattern: '{@Atoms,@Pages}', group: 'index' },
+          { pattern: '{@Atoms,@Molecules,@Pages}', group: 'index' },
         ],
         pathGroupsExcludedImportTypes: [],
       },
