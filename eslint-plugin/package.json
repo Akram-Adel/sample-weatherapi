@@ -1,0 +1,10 @@
+{
+  "name": "@akram/eslint-plugin",
+  "version": "0.1.0",
+  "description": "Custom eslint rules",
+  "main": "lib/index.js",
+  "author": "Akram-Adel <akrmadel33@gmail.com>",
+  "peerDependencies": {
+    "@typescript-eslint/utils": "^6.9.1"
+  }
+}
