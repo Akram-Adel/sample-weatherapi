@@ -3,9 +3,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import * as Pages from '@Pages';
+
 import { ErrorBoundary } from './ErrorBoundry';
 import { RootStackParamList } from './Navigation.d';
-import * as Screens from './Screens';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -14,7 +15,7 @@ export function App() {
     <ErrorBoundary>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name={'UserInfo'} component={Screens.UserInfo} />
+          <Stack.Screen name={'UserInfo'} component={Pages.UserInfo} />
         </Stack.Navigator>
       </NavigationContainer>
     </ErrorBoundary>

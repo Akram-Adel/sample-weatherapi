@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import { Text } from '@Atoms';
 
 export class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean }> {
   constructor(props: any) {
@@ -20,12 +22,11 @@ export class ErrorBoundary extends React.Component<{ children: React.ReactNode }
 function ErrorFallback() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Something went wrong!</Text>
+      <Text secondary>Something went wrong!</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  text: { color: 'red' },
 });

@@ -1,3 +1,11 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@Navigation": ["./src/Navigation.d.ts"],
+      "@Theme": ["./src/Theme"],
+      "@Atoms": ["./src/Components/UI/Atoms"],
+      "@Pages": ["./src/Components/Pages"],
+    }
+  }
 }
