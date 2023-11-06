@@ -4,6 +4,7 @@
     "paths": {
       "@Navigation": ["./src/Navigation.d.ts"],
       "@Theme": ["./src/Theme"],
+      "@API": ["./src/API"],
       "@Atoms": ["./src/Components/UI/Atoms"],
       "@Molecules": ["./src/Components/UI/Molecules"],
       "@Pages": ["./src/Components/Pages"],

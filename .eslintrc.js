@@ -53,7 +53,7 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
         pathGroups: [
           { pattern: 'react*(-native)', group: 'builtin' },
-          { pattern: '{@Navigation,@Theme}', group: 'index', position: 'before' },
+          { pattern: '{@Navigation,@Theme,@API}', group: 'index', position: 'before' },
           { pattern: '{@Atoms,@Molecules,@Pages}', group: 'index' },
         ],
         pathGroupsExcludedImportTypes: [],
