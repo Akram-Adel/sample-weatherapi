@@ -16,6 +16,7 @@ export function App() {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name={'CityInfo'} component={Pages.CityInfo} />
+          <Stack.Screen name={'CityWeather'} component={Pages.CityWeather} />
         </Stack.Navigator>
       </NavigationContainer>
     </ErrorBoundary>
